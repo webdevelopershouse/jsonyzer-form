@@ -21,6 +21,54 @@
         <link href="css/wdh.imi.jsonyzer.form.css" rel="stylesheet">
     </head>
     <body>
-        
+       
+        <div id="wdh-form" class="wdh-form">
+            
+        </div>
+         <script type="text/javascript">
+   //         $jWDH('#ID_CONTAINER').NUMEPLUGIN();
+              var options = {"fields": {
+                                "0": {
+                                    "field": {
+                                        "settings": {
+                                            "name"    : "",
+                                            "id"      : "",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "label": {
+                                            "name"    : "Email",
+                                            "for"     : "email",
+                                            "position": "first",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "input": {
+                                            "name"    : "email",
+                                            "id"      : "email",
+                                            "type"    : "text",
+                                            "value"   : "",
+                                            "position": "second",
+                                            "css"     : "",
+                                            "class"   : "",
+                                            "placeholder" : "typing"
+                                        }
+                                    }
+                                }
+                                   
+                              },
+                              
+                                    "form": {
+                                        "settings": {
+                                            "name"    : "",
+                                            "id"      : "",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        }
+                                    }
+                                   
+                            };
+              $jWDH('#wdh-form').wdhFormJS(options);
+        </script>
     </body>
 </html>
