@@ -52,10 +52,167 @@
                                             "css"     : "",
                                             "class"   : "",
                                             "placeholder" : "typing"
-                                        }
+                                        },
+                                        "fieldoptions": {
+                                            "0":{
+                                                "label"    : "Masculin",
+                                                "value"    : "masculin"
+                                            },
+                                            "1":{
+                                                "label"    : "Feminin",
+                                                "value"    : "feminin"
+                                            }
+                                        }        
                                     }
-                                }
-                                   
+                                },
+                                "1": {
+                                    "field": {
+                                        "settings": {
+                                            "name"    : "",
+                                            "id"      : "",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "label": {
+                                            "name"    : "Name",
+                                            "for"     : "name",
+                                            "position": "first",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "input": {
+                                            "name"    : "name",
+                                            "id"      : "name",
+                                            "type"    : "text",
+                                            "value"   : "",
+                                            "position": "second",
+                                            "css"     : "",
+                                            "class"   : "",
+                                            "placeholder" : "typing"
+                                        },
+                                        "fieldoptions": {
+                                            "0":{
+                                                "label"    : "Masculin",
+                                                "value"    : "masculin"
+                                            },
+                                            "1":{
+                                                "label"    : "Feminin",
+                                                "value"    : "feminin"
+                                            }
+                                        }        
+                                    }
+                                },
+                                "2": {
+                                    "field": {
+                                        "settings": {
+                                            "name"    : "",
+                                            "id"      : "",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "label": {
+                                            "name"    : "Adress",
+                                            "for"     : "adress",
+                                            "position": "first",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "input": {
+                                            "name"    : "adress",
+                                            "id"      : "adress",
+                                            "type"    : "textarea",
+                                            "value"   : "",
+                                            "position": "second",
+                                            "css"     : "",
+                                            "class"   : "",
+                                            "placeholder" : "typing"
+                                        },
+                                        "fieldoptions": {
+                                            "0":{
+                                                "label"    : "Masculin",
+                                                "value"    : "masculin"
+                                            },
+                                            "1":{
+                                                "label"    : "Feminin",
+                                                "value"    : "feminin"
+                                            }
+                                        }        
+                                    }
+                                },        
+                                "3": {
+                                    "field": {
+                                        "settings": {
+                                            "name"    : "",
+                                            "id"      : "",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "label": {
+                                            "name"    : "",
+                                            "for"     : "",
+                                            "position": "first",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "input": {
+                                            "name"    : "",
+                                            "id"      : "",
+                                            "type"    : "submit",
+                                            "value"   : "",
+                                            "position": "second",
+                                            "css"     : "",
+                                            "class"   : "",
+                                            "placeholder" : "Submit"
+                                        },
+                                        "fieldoptions": {
+                                            "0":{
+                                                "label"    : "Masculin",
+                                                "value"    : "masculin"
+                                            },
+                                            "1":{
+                                                "label"    : "Feminin",
+                                                "value"    : "feminin"
+                                            }
+                                        }        
+                                    }
+                                },
+                                "4": {
+                                    "field": {
+                                        "settings": {
+                                            "name"    : "",
+                                            "id"      : "",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "label": {
+                                            "name"    : "Gender",
+                                            "for"     : "gender",
+                                            "position": "first",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "input": {
+                                            "name"    : "gender",
+                                            "id"      : "gender",
+                                            "type"    : "select",
+                                            "value"   : "",
+                                            "position": "second",
+                                            "css"     : "",
+                                            "class"   : "",
+                                            "placeholder" : ""
+                                        },
+                                        "fieldoptions": {
+                                            "0":{
+                                                "label"    : "Masculin",
+                                                "value"    : "masculin"
+                                            },
+                                            "1":{
+                                                "label"    : "Feminin",
+                                                "value"    : "feminin"
+                                            }
+                                        }        
+                                    }
+                                },        
                               },
                                 "form": {
                                     "settings": {

@@ -81,11 +81,12 @@ $jWDH.fn.extend({
                 var fieldHTML = new Array(),
                     labelData = fieldData['label'],
                     inputData = fieldData['input'],
+                    fieldoptionsData = fieldData['fieldoptions'],
                     fieldSettings = fieldData['settings'];
                 
                 fieldHTML.push('    <div id="'+fieldSettings['id']+'" class="'+fieldSettings['class']+'" name="'+fieldSettings['name']+'">');
                 fieldHTML.push(         label.view(labelData));
-                fieldHTML.push(         input.view(inputData));
+                fieldHTML.push(         input.view(inputData,fieldoptionsData));
                 fieldHTML.push('    </div>');
                 
                 return fieldHTML.join('');
@@ -109,14 +110,34 @@ $jWDH.fn.extend({
         },
         
         input = {
-            view: function(inputData){
-               return input.generate(inputData);
+            view: function(inputData,fieldoptionsData){
+               return input.generate(inputData,fieldoptionsData);
             },
                     
-            generate:function(inputData){
+            generate:function(inputData,fieldoptionsData){
                 var inputHTML = new Array();
-                
-                inputHTML.push('    <input id="'+inputData['id']+'" type="'+inputData['type']+'" name="'+inputData['name']+'" value="'+inputData['value']+'" placeholder="'+inputData['placeholder']+'" />');
+                switch (inputData['type']) {
+                    case 'text':
+                        inputHTML.push('    <input id="'+inputData['id']+'" type="'+inputData['type']+'" name="'+inputData['name']+'" value="'+inputData['value']+'" placeholder="'+inputData['placeholder']+'" />');
+                        break;
+                    case 'textarea':
+                        inputHTML.push('    <textarea id="'+inputData['id']+'" type="'+inputData['type']+'" name="'+inputData['name']+'" value="'+inputData['value']+'" placeholder="'+inputData['placeholder']+'" />');
+                        break;
+                    case 'select':
+                        inputHTML.push('    <select id="'+inputData['id']+'" name="'+inputData['name']+'">');
+                        for (var position in fieldoptionsData){
+                            
+                            inputHTML.push('    <option value="'+fieldoptionsData[position]['value']+'">'+fieldoptionsData[position]['label']+'</option>');
+                        }
+                        inputHTML.push('    </select>');
+                        break;
+                    case 'submit':
+                        inputHTML.push('    <input id="'+inputData['id']+'" type="'+inputData['type']+'" name="'+inputData['name']+'" value="'+inputData['value']+'" placeholder="'+inputData['placeholder']+'" />');
+                        break;    
+                    default :
+                        inputHTML.push('    <input id="'+inputData['id']+'" type="'+inputData['type']+'" name="'+inputData['name']+'" value="'+inputData['value']+'" placeholder="'+inputData['placeholder']+'" />');
+                        break;
+                }
                 
                 return inputHTML.join('');
             }   
