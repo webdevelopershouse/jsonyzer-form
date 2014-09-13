@@ -26,7 +26,7 @@
             
         </div>
          <script type="text/javascript">
-   //         $jWDH('#ID_CONTAINER').NUMEPLUGIN();
+  
               var options = {"fields": {
                                 "0": {
                                     "field": {
@@ -57,16 +57,14 @@
                                 }
                                    
                               },
-                              
-                                    "form": {
-                                        "settings": {
-                                            "name"    : "",
-                                            "id"      : "",
-                                            "css"     : "",
-                                            "class"   : ""
-                                        }
+                                "form": {
+                                    "settings": {
+                                        "name"    : "",
+                                        "id"      : "",
+                                        "css"     : "",
+                                        "class"   : ""
                                     }
-                                   
+                                }
                             };
               $jWDH('#wdh-form').wdhFormJS(options);
         </script>
