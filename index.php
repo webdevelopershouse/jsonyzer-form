@@ -158,11 +158,11 @@
                                             "name"    : "",
                                             "id"      : "",
                                             "type"    : "submit",
-                                            "value"   : "",
+                                            "value"   : "Submit",
                                             "position": "second",
                                             "css"     : "",
                                             "class"   : "",
-                                            "placeholder" : "Submit"
+                                            "placeholder" : ""
                                         },
                                         "fieldoptions": {
                                             "0":{
@@ -212,7 +212,89 @@
                                             }
                                         }        
                                     }
-                                },        
+                                },
+                                "5": {
+                                    "field": {
+                                        "settings": {
+                                            "name"    : "",
+                                            "id"      : "",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "label": {
+                                            "name"    : "Radio",
+                                            "for"     : "radio",
+                                            "position": "first",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "input": {
+                                            "name"    : "radio",
+                                            "id"      : "radio",
+                                            "type"    : "radio",
+                                            "value"   : "",
+                                            "position": "second",
+                                            "css"     : "",
+                                            "class"   : "",
+                                            "placeholder" : ""
+                                        },
+                                        "fieldoptions": {
+                                            "0":{
+                                                "label"    : "KissFm",
+                                                "value"    : "kiss"
+                                            },
+                                            "1":{
+                                                "label"    : "Zu",
+                                                "value"    : "zu"
+                                            }
+                                        }        
+                                    }
+                                },
+                                "6": {
+                                    "field": {
+                                        "settings": {
+                                            "name"    : "",
+                                            "id"      : "",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "label": {
+                                            "name"    : "Countries",
+                                            "for"     : "contries",
+                                            "position": "first",
+                                            "css"     : "",
+                                            "class"   : ""
+                                        },
+                                        "input": {
+                                            "name"    : "contries",
+                                            "id"      : "contries",
+                                            "type"    : "checkbox",
+                                            "value"   : "",
+                                            "position": "second",
+                                            "css"     : "",
+                                            "class"   : "",
+                                            "placeholder" : ""
+                                        },
+                                        "fieldoptions": {
+                                            "0":{
+                                                "label"    : "France",
+                                                "value"    : "france"
+                                            },
+                                            "1":{
+                                                "label"    : "Spain",
+                                                "value"    : "spain"
+                                            },
+                                            "2":{
+                                                "label"    : "Vatican",
+                                                "value"    : "Vatican"
+                                            },
+                                            "3":{
+                                                "label"    : "London",
+                                                "value"    : "london"
+                                            }        
+                                        }        
+                                    }
+                                }        
                               },
                                 "form": {
                                     "settings": {

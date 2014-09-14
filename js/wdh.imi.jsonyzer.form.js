@@ -125,12 +125,27 @@ $jWDH.fn.extend({
                         break;
                     case 'select':
                         inputHTML.push('    <select id="'+inputData['id']+'" name="'+inputData['name']+'">');
+                        
                         for (var position in fieldoptionsData){
-                            
                             inputHTML.push('    <option value="'+fieldoptionsData[position]['value']+'">'+fieldoptionsData[position]['label']+'</option>');
                         }
+                        
                         inputHTML.push('    </select>');
                         break;
+                    case 'radio':
+                        
+                        for (var position in fieldoptionsData){
+                            inputHTML.push('    <input id="'+inputData['id']+'" type="'+inputData['type']+'" name="'+inputData['name']+'" value="'+fieldoptionsData[position]['value']+'" />'+fieldoptionsData[position]['label']+'<br>'); 
+                        }
+                        
+                        break;
+                    case 'checkbox':
+                        
+                        for (var position in fieldoptionsData){
+                            inputHTML.push('    <input id="'+inputData['id']+'" type="'+inputData['type']+'" name="'+inputData['name']+'" value="'+fieldoptionsData[position]['value']+'" />'+fieldoptionsData[position]['label']+'<br>'); 
+                        }
+                        
+                        break; 
                     case 'submit':
                         inputHTML.push('    <input id="'+inputData['id']+'" type="'+inputData['type']+'" name="'+inputData['name']+'" value="'+inputData['value']+'" placeholder="'+inputData['placeholder']+'" />');
                         break;    
